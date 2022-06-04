@@ -3,11 +3,11 @@
      do not exceed four million, find the sum of the even-valued terms.
 */
 
-export const evenFibonacci = (): number => {
+export const evenFibonacci = (num: number): number => {
   const terms = [1, 2];
-  while (terms[terms.length - 1] <= 4000000) {
+  while (terms[terms.length - 1] <= num) {
     terms.push(terms[terms.length - 1] + terms[terms.length - 2]);
   }
-  return terms.filter((num) => num % 2 === 0)
-              .reduce((num, sum) => num + sum, 0);
+  return terms.filter((t) => t % 2 === 0)
+              .reduce((t, sum) => t + sum, 0);
 };

@@ -1,0 +1,32 @@
+/* 
+  4. A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.
+     Find the largest palindrome made from the product of two 3-digit numbers.
+*/
+
+/* 
+  5. 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
+     What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
+*/
+
+/* 
+  6. Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
+*/
+
+/* 
+  7. By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
+     What is the 10 001st prime number?
+*/
+
+/* 
+  8. Find the thirteen adjacent digits in the 1000-digit number that have the greatest product. What is the value of this product?
+*/
+
+/* 
+  9. There exists exactly one Pythagorean triplet for which a + b + c = 1000.
+     Find the product abc.
+*/
+
+/* 
+  10. The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
+      Find the sum of all the primes below two million.
+*/
