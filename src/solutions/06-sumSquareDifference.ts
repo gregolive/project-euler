@@ -9,10 +9,7 @@ const sumOfSquares = (num: number): number => {
 };
 
 const squareOfSums = (num: number): number => {
-  let sum = 0;
-  for (let i = 1; i <= num; i++) {
-    sum += i;
-  }
+  const sum = [...Array(num).keys()].reduce((n, sum) => n + sum, 0);
   return Math.pow(sum, 2);
 };
 

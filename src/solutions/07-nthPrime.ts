@@ -12,7 +12,7 @@ const hasTwoFactors = (num: number): boolean => {
 };
 
 export const nthPrime = (num: number): number => {
-  const primes: Array<number> = [2];
+  const primes = [2];
   let i = 2;
   while (primes.length < num) {
     i++;
