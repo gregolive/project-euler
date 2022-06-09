@@ -3,13 +3,7 @@
      What is the largest prime factor of the number 600851475143 ?
 */
 
-const isPrime = (num: number): boolean => {
-  if (num <= 1) { return false; }
-  for (let i = 2; i <= (num / 2); i++) {
-    if (num % i === 0) { return false; }
-  }
-  return true;
-};
+import { isPrime } from '../helpers';
 
 export const primeFactor = (num: number): number | null => {
   for (let i = 2; i < (num / 2); i++) {

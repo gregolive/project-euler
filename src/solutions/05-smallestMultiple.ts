@@ -2,11 +2,7 @@
   5. What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
 */
 
-export const factorial = (num: number): number => {
-  if (num < 0) { return -1; }
-  if (num === 0) { return 1; }
-  return num * factorial(num - 1);
-};
+import { factorial } from '../helpers';
 
 export const smallestMultiple = (num: number): number => {
   const limit = factorial(num);
