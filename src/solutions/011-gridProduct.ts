@@ -1,4 +1,5 @@
 /*
+  PROBLEM 011
   What is the greatest product of four adjacent numbers in the same 
   direction (up, down, left, right, or diagonally) in the 20×20 grid?
 */
@@ -26,6 +27,72 @@ const grid = [
   [  1, 70, 54, 71, 83, 51, 54, 69, 16, 92, 33, 48, 61, 43, 52,  1, 89, 19, 67, 48 ],
 ];
 
-export const gridProduct = (row: number, col: number, l: number): number => {
+// Find the vertical direction product starting from a given row and column for a given length.
+const vertProduct = (row: number, col: number, l: number): number => {
+  let prod = 0;
+  if (row <= grid.length - l) {
+    prod = 1;
+    for (let i = 0; i < l; i++) {
+      prod *= grid[row + i][col];
+    }
+  }
+  return prod;
+};
 
+// Find the horizontal direction product starting from a given row and column for a given length.
+const horiProduct = (row: number, col: number, l: number): number => {
+  let prod = 0;
+  if (col <= grid[0].length - l) {
+    prod = 1;
+    for (let i = 0; i < l; i++) {
+      prod *= grid[row][col + i];
+    }
+  }
+  return prod;
+};
+
+// Find the descending (l to r) diagonal product starting from a given row and column for a given length.
+const diagDescProduct = (row: number, col: number, l: number): number => {
+  let prod = 0;
+  if (row <= grid.length - l && col <= grid[0].length - l) {
+    prod = 1;
+    for (let i = 0; i < l; i++) {
+      prod *= grid[row + i][col + i];
+    }
+  }
+  return prod;
+};
+
+// Find the ascending diagonal product starting from a given row and column for a given length.
+const diagAscProduct = (row: number, col: number, l: number): number => {
+  let prod = 0;
+  if (row <= grid.length - l && col > l) {
+    prod = 1;
+    for (let i = 0; i < l; i++) {
+      prod *= grid[row + i][col - i];
+    }
+  }
+  return prod;
+}
+
+/*
+  Compute the largest grid product for a given length (l) by looping through each row (i), column (j) 
+  coordinate position on the grid.
+  - Skip any position where both the row and column are within "l" cells of the edge of the grid.
+    (No group of numbers of length "l" will exist within this range without overflowing the grid)
+  - For each location compute assign the product for the 4 directions to an array and reduce the array
+    to find the largest product.
+  - If the largest product for this coordinate is larger than the current product, assign it to "prod."
+*/
+export const gridProduct = (l: number): number => {
+  let prod = 0;
+  for (let i = 0; i < grid.length; i++) {
+    for (let j = 0; j < grid[0].length; j++) {
+      if (i > grid.length - l && j > grid.length - l) { continue; }
+      const coord = [vertProduct(i, j, l), horiProduct(i, j, l), diagDescProduct(i, j, l), diagAscProduct(i, j, l)]
+                    .reduce((prev, cur) => (cur > prev) ? cur : prev, 0);
+      prod = (coord > prod) ? coord : prod;
+    }
+  }
+  return prod;
 };

@@ -8,3 +8,4 @@ export * from './007-nthPrime';
 export * from './008-productInSeries';
 export * from './009-pythagoreanTripletProd';
 export * from './010-sumPrimesBelow';
+export * from './011-gridProduct';
