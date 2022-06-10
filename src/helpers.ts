@@ -1,5 +1,5 @@
 /*
-  Determines if a given number (num) is prime or not.
+  Determine if a given number (num) is prime or not.
   - If the number is less than 2 or divisible by 2 (but not 2), return false.
   - Divide the number by all odd numbers (already divided by even numbers above) up to
     half of "num" (no number greater than half the target number will be a factor) and
@@ -15,7 +15,7 @@ export const isPrime = (num: number): boolean => {
 };
 
 /*
-  Determines if a given number (num) is a palindrome or not.
+  Determine if a given number (num) is a palindrome or not.
   - Convert the number to a string and for each element in the first half of the string,
   check whether element on the opposite half is the same. If not return false.
 */
@@ -30,7 +30,7 @@ export const isPalindrome = (num: number): boolean => {
 };
 
 /*
-  Recursively computes the factorial of given number (num).
+  Recursively compute the factorial of given number (num).
   - Whenever "num" is greater than 0, mulitply by the number and recursively call the
     function with "num" minus 1.
 */

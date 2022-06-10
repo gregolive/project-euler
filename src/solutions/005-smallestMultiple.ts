@@ -6,7 +6,7 @@
 import { factorial } from '../helpers';
 
 /*
-  Computes the smallest multiple of all numbers from 1 to a given number (num).
+  Compute the smallest multiple of all numbers from 1 to a given number (num).
   - Upper bound for the multiple is the factorial of "num."
   - While looping through we can increment counter "i" by the given number since the solution must be a
     multiple of this number.

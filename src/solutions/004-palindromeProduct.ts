@@ -7,7 +7,7 @@
 import { isPalindrome } from '../helpers';
 
 /*
-  Computes the largest palindrome made from the product of two 3-digit numbers.
+  Compute the largest palindrome made from the product of two 3-digit numbers.
 */
 export const palindromeProduct = (): number => {
   let product = 0;
