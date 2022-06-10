@@ -6,8 +6,9 @@
 import { isPrime } from '../helpers';
 
 export const sumPrimesBelow = (num: number): number => {
-  let sum = 0;
-  for (let i = 2; i < num; i++) {
+  if (num < 2) { return 0; }
+  let sum = 2;
+  for (let i = 3; i < num; i += 2) {
     if (isPrime(i)) { sum += i; }
   }
   return sum;

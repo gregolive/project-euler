@@ -1,3 +1,4 @@
-import { sumPrimesBelow } from './solutions/10-sumPrimesBelow';
+// Project Euler solution functions
+import * as PE from './solutions';
 
-console.log(sumPrimesBelow(2000000));
+console.log(PE.gridProduct(20, 20, 4));

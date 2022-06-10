@@ -6,10 +6,10 @@
 import { isPrime } from '../helpers';
 
 export const nthPrime = (num: number): number => {
-  const primes = [];
+  const primes = [2];
   let i = 1;
   while (primes.length < num) {
-    i++;
+    i += 2;
     if (isPrime(i)) { primes.push(i); }
   }
   return primes[num - 1];
