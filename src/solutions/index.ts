@@ -10,3 +10,4 @@ export * from './009-pythagoreanTripletProd';
 export * from './010-sumPrimesBelow';
 export * from './011-gridProduct';
 export * from './012-divisibleTriangular';
+export * from './013-largeSum';
