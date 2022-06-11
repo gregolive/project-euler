@@ -15,3 +15,4 @@ Typescript solutions to various [Project Euler](https://projecteuler.net/about) 
 009. 31,875,000
 010. 142,913,828,922
 011. 70,600,674
+012. 76,576,500

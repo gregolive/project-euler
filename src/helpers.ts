@@ -39,3 +39,19 @@ export const factorial = (num: number): number => {
   if (num === 0) { return 1; }
   return num * factorial(num - 1);
 };
+
+/*
+  Compute the nth triangular number.
+*/
+export const nthTriangular = (n: number): number => n * (n + 1) / 2;
+
+/*
+  Compute the number of divisors of a given number (num).
+*/
+export const divisorCount = (num: number): number => {
+  let divisors = 1;
+  for (let i = 1; i <= (num / 2); i++) {
+    if (num % i === 0) { divisors++; }
+  }
+  return divisors;
+};
