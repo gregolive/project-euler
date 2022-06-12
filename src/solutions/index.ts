@@ -12,3 +12,4 @@ export * from './011-gridProduct';
 export * from './012-divisibleTriangular';
 export * from './013-largeSum';
 export * from './014-collatzSeq';
+export * from './015-latticePaths';
