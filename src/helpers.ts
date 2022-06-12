@@ -55,3 +55,8 @@ export const divisorCount = (num: number): number => {
   }
   return divisors;
 };
+
+/*
+  Compute the sum of the digits of a given number (num).
+*/
+export const digitSum = (num: number | bigint): number => Array.from(String(num), Number).reduce((n, sum) => n + sum, 0);

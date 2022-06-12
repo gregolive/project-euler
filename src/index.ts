@@ -1,4 +1,4 @@
 // Project Euler solution functions
 import * as PE from './solutions';
 
-console.log(PE.latticePaths(2));
+console.log(PE.powerDigitSum(1000));
