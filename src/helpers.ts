@@ -30,14 +30,35 @@ export const isPalindrome = (num: number): boolean => {
 };
 
 /*
+  Compute the factorial of given number (num) via loop.
+*/
+export const factorial = (num: number): number => {
+  let fact = 1;
+  for (let i = num; i > 1; i--) {
+    fact *= i;
+  }
+  return fact;
+};
+
+/*
   Recursively compute the factorial of given number (num).
   - Whenever "num" is greater than 0, mulitply by the number and recursively call the
     function with "num" minus 1.
 */
-export const factorial = (num: number): number => {
-  if (num < 0) { return -1; }
+export const recursiveFactorial = (num: number): number => {
   if (num === 0) { return 1; }
-  return num * factorial(num - 1);
+  return num * recursiveFactorial(num - 1);
+};
+
+/*
+  Compute the bigint factorial of given number (num) via loop.
+*/
+export const bigintFactorial = (num: number): bigint => {
+  let fact = BigInt(1);
+  for (let i = num; i > 1; i--) {
+    fact *= BigInt(i);
+  }
+  return fact;
 };
 
 /*

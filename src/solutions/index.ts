@@ -14,3 +14,4 @@ export * from './013-largeSum';
 export * from './014-collatzSeq';
 export * from './015-latticePaths';
 export * from './016-powerDigitSum';
+export * from './020-factorialDigitSum';
