@@ -18,3 +18,4 @@ export * from './017-numberLetterCount';
 export * from './018-maxPathSum';
 export * from './019-countingSundays';
 export * from './020-factorialDigitSum';
+export * from './021-amicableSum';

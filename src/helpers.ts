@@ -78,6 +78,17 @@ export const divisorCount = (num: number): number => {
 };
 
 /*
+  Compute the sum of the divisors of a given number (num).
+*/
+export const divisorSum = (num: number): number => {
+  let sum = 1;
+  for (let i = 2; i <= (num / 2); i++) {
+    if (num % i === 0) { sum += i; }
+  }
+  return sum;
+};
+
+/*
   Compute the sum of the digits of a given number (num).
 */
 export const digitSum = (num: number | bigint): number => Array.from(String(num), Number).reduce((n, sum) => n + sum, 0);
