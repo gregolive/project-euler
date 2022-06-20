@@ -20,4 +20,7 @@ Typescript solutions to various [Project Euler](https://projecteuler.net/about) 
 014. 837,799
 015. 137,846,528,820
 016. 1,366
+017. 21,124
+018. 1,074
+019. 
 020. 648

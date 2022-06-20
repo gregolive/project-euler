@@ -47,7 +47,6 @@ export const numberLetterCount = (num: number) => {
     8: 6,
     9: 6,
   };
-
   let count = 0;
 
   for (let i = num; i > 0; i--) {
@@ -76,6 +75,5 @@ export const numberLetterCount = (num: number) => {
       count += singleDig[ones];
     }
   }
-
   return count;
 };

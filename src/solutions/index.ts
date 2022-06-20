@@ -15,4 +15,5 @@ export * from './014-collatzSeq';
 export * from './015-latticePaths';
 export * from './016-powerDigitSum';
 export * from './017-numberLetterCount';
+export * from './018-maxPathSum';
 export * from './020-factorialDigitSum';
