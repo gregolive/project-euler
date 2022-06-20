@@ -1,4 +1,4 @@
 // Project Euler solution functions
 import * as PE from './solutions';
 
-console.log(PE.maxPathSum());
+console.log(PE.countingSundays());
