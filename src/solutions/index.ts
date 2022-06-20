@@ -19,3 +19,4 @@ export * from './018-maxPathSum';
 export * from './019-countingSundays';
 export * from './020-factorialDigitSum';
 export * from './021-amicableSum';
+export * from './022-nameScores';
