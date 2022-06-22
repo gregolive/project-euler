@@ -21,5 +21,5 @@ export * from './020-factorialDigitSum';
 export * from './021-amicableSum';
 export * from './022-nameScores';
 export * from './023-nonAbundantSums';
-export * from './024-lexicographicOrder';
+export * from './024-nthLexicographicPermutation';
 export * from './025-nDigitFibonacci';

@@ -5,8 +5,11 @@
 
 import { divisorSum } from '../helpers';
 
+/*
+  Computes the sum of all positive integers that cannot be written as the sum of two abundant numbers.
+*/
 export const nonAbundantSums = () => {
-  const UPPER = 28123;
+  const UPPER = 28123; // upper bound given in problem statement
   // collect abundant numbers
   const abundant: number[] = [];
   for (let i = 1; i <= UPPER; i++) {

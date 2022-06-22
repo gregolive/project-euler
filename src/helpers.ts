@@ -92,3 +92,16 @@ export const divisorSum = (num: number): number => {
   Compute the sum of the digits of a given number (num).
 */
 export const digitSum = (num: number | bigint): number => Array.from(String(num), Number).reduce((n, sum) => n + sum, 0);
+
+/*
+  Compute the permutations of a given array 'arr'.
+*/
+const getPermutations = (arr: any[], frac: any[] = [], perms: any[][] = []) => {
+  for (let i = 0; i < arr.length; i++) {
+    const curr = arr.splice(i, 1);
+    if (arr.length === 0) perms.push(frac.concat(curr));
+    getPermutations(arr.slice(), frac.concat(curr), perms);
+    arr.splice(i, 0, curr[0]);
+  }
+  return perms;
+};
