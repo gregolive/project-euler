@@ -23,3 +23,5 @@ export * from './022-nameScores';
 export * from './023-nonAbundantSums';
 export * from './024-nthLexicographicPermutation';
 export * from './025-nDigitFibonacci';
+export * from './026-reciprocalCycle';
+export * from './029-integerCombinations';
