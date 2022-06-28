@@ -7,8 +7,8 @@
   Compute the unit fraction below given number (num) with the longest recurring cycle in its decimal part.
   - Function 'cycleLength' computes the recurring cycle length for a unit fraction with long division.
 */
-export const reciprocalCycle = (num: number) => {  
-  const cycleLength = (num: number) => {
+export const reciprocalCycle = (num: number): number => {  
+  const cycleLength = (num: number): number => {
     if (num % 2 === 0 || num % 5 === 0) return 0;
   
     const prev: number[] = [];
