@@ -24,6 +24,7 @@ export * from './023-nonAbundantSums';
 export * from './024-nthLexicographicPermutation';
 export * from './025-nDigitFibonacci';
 export * from './026-reciprocalCycle';
+export * from './027-quadraticPrimes';
 export * from './028-numSpiralDiagonals';
 export * from './029-distinctPowers';
 export * from './030-digitFifthPowers';
