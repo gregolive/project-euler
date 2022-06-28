@@ -26,3 +26,4 @@ export * from './025-nDigitFibonacci';
 export * from './026-reciprocalCycle';
 export * from './029-integerCombinations';
 export * from './030-fifthPowerSums';
+export * from './031-coinCombinations';
