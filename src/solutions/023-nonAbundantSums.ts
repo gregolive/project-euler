@@ -3,12 +3,18 @@
   Find the sum of all the positive integers which cannot be written as the sum of two abundant numbers.
 */
 
-import { divisorSum } from '../helpers';
-
 /*
   Computes the sum of all positive integers that cannot be written as the sum of two abundant numbers.
 */
 export const nonAbundantSums = () => {
+  const divisorSum = (num: number): number => {
+    let sum = 1;
+    for (let i = 2; i <= (num / 2); i++) {
+      if (num % i === 0) { sum += i; }
+    }
+    return sum;
+  };
+
   const UPPER = 28123; // upper bound given in problem statement
   // collect abundant numbers
   const abundant: number[] = [];

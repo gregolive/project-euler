@@ -4,18 +4,6 @@
 */
 
 /*
-  Compute the Collatz sequence chain length for a given number (num).
-*/
-const chainLength = (num: number): number => {
-  let length = 1;
-  while (num > 1) {
-    num = (num % 2 === 0) ? num / 2 : 3 * num + 1;
-    length++;
-  }
-  return length;
-};
-
-/*
   Compute the number between zero and given number (num) that produces the longest Collatz
   sequence chain.
   - Loop through all numbers and if the current counter "i" produces a longer chain than the
@@ -23,6 +11,15 @@ const chainLength = (num: number): number => {
     chain (chainNum).
 */
 export const collatzSeq = (num: number): number => {
+  const chainLength = (num: number): number => {
+    let length = 1;
+    while (num > 1) {
+      num = (num % 2 === 0) ? num / 2 : 3 * num + 1;
+      length++;
+    }
+    return length;
+  };
+
   let chain = 1;
   let chainNum = 1;
   for (let i = 2; i <= num; i++) {

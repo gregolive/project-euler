@@ -4,8 +4,6 @@
   What is the 10 001st prime number?
 */
 
-import { isPrime } from '../helpers';
-
 /*
   Compute the nth prime number.
   - Build array "primes" as long as the number of elements in the array is less than "n".
@@ -14,6 +12,14 @@ import { isPrime } from '../helpers';
   - Return the final element in the array.
 */
 export const nthPrime = (n: number): number => {
+  const isPrime = (num: number): boolean => {
+    if (num < 2 || (num % 2 === 0 && num !== 2)) { return false; }
+    for (let i = 3; i <= (num / 2); i += 2) {
+      if (num % i === 0) { return false; }
+    }
+    return true;
+  };
+
   const primes = [2];
   let i = 3;
   while (primes.length < n) {

@@ -3,8 +3,6 @@
   What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
 */
 
-import { recursiveFactorial } from '../helpers';
-
 /*
   Compute the smallest multiple of all numbers from 1 to a given number (num).
   - Upper bound for the multiple is the factorial of "num."
@@ -14,6 +12,11 @@ import { recursiveFactorial } from '../helpers';
     to the number without breaking we can return "i".
 */
 export const smallestMultiple = (num: number): number => {
+  const recursiveFactorial = (num: number): number => {
+    if (num === 0) { return 1; }
+    return num * recursiveFactorial(num - 1);
+  };
+
   const limit = recursiveFactorial(num);
   for (let i = num; i < limit; i += num) {
     for (let j = 2; j <= num; j++) {

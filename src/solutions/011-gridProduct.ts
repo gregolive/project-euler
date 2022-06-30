@@ -4,54 +4,6 @@
   direction (up, down, left, right, or diagonally) in the 20×20 grid?
 */
 
-// Find the vertical direction product starting from a given row and column for a given length.
-const vertProduct = (row: number, col: number, l: number, grid: Array<Array<number>>): number => {
-  let prod = 0;
-  if (row <= grid.length - l) {
-    prod = 1;
-    for (let i = 0; i < l; i++) {
-      prod *= grid[row + i][col];
-    }
-  }
-  return prod;
-};
-
-// Find the horizontal direction product starting from a given row and column for a given length.
-const horiProduct = (row: number, col: number, l: number, grid: Array<Array<number>>): number => {
-  let prod = 0;
-  if (col <= grid[0].length - l) {
-    prod = 1;
-    for (let i = 0; i < l; i++) {
-      prod *= grid[row][col + i];
-    }
-  }
-  return prod;
-};
-
-// Find the descending (l to r) diagonal product starting from a given row and column for a given length.
-const diagDescProduct = (row: number, col: number, l: number, grid: Array<Array<number>>): number => {
-  let prod = 0;
-  if (row <= grid.length - l && col <= grid[0].length - l) {
-    prod = 1;
-    for (let i = 0; i < l; i++) {
-      prod *= grid[row + i][col + i];
-    }
-  }
-  return prod;
-};
-
-// Find the ascending diagonal product starting from a given row and column for a given length.
-const diagAscProduct = (row: number, col: number, l: number, grid: Array<Array<number>>): number => {
-  let prod = 0;
-  if (row <= grid.length - l && col > l) {
-    prod = 1;
-    for (let i = 0; i < l; i++) {
-      prod *= grid[row + i][col - i];
-    }
-  }
-  return prod;
-}
-
 /*
   Compute the largest grid product for a given length (l) by looping through each row (i), column (j) 
   coordinate position on the grid.
@@ -84,6 +36,55 @@ export const gridProduct = (l: number): number => {
     [ 20, 73, 35, 29, 78, 31, 90,  1, 74, 31, 49, 71, 48, 86, 81, 16, 23, 57,  5, 54 ],
     [  1, 70, 54, 71, 83, 51, 54, 69, 16, 92, 33, 48, 61, 43, 52,  1, 89, 19, 67, 48 ],
   ];
+
+  // Find the vertical direction product starting from a given row and column for a given length.
+  const vertProduct = (row: number, col: number, l: number, grid: Array<Array<number>>): number => {
+    let prod = 0;
+    if (row <= grid.length - l) {
+      prod = 1;
+      for (let i = 0; i < l; i++) {
+        prod *= grid[row + i][col];
+      }
+    }
+    return prod;
+  };
+
+  // Find the horizontal direction product starting from a given row and column for a given length.
+  const horiProduct = (row: number, col: number, l: number, grid: Array<Array<number>>): number => {
+    let prod = 0;
+    if (col <= grid[0].length - l) {
+      prod = 1;
+      for (let i = 0; i < l; i++) {
+        prod *= grid[row][col + i];
+      }
+    }
+    return prod;
+  };
+
+  // Find the descending (l to r) diagonal product starting from a given row and column for a given length.
+  const diagDescProduct = (row: number, col: number, l: number, grid: Array<Array<number>>): number => {
+    let prod = 0;
+    if (row <= grid.length - l && col <= grid[0].length - l) {
+      prod = 1;
+      for (let i = 0; i < l; i++) {
+        prod *= grid[row + i][col + i];
+      }
+    }
+    return prod;
+  };
+
+  // Find the ascending diagonal product starting from a given row and column for a given length.
+  const diagAscProduct = (row: number, col: number, l: number, grid: Array<Array<number>>): number => {
+    let prod = 0;
+    if (row <= grid.length - l && col > l) {
+      prod = 1;
+      for (let i = 0; i < l; i++) {
+        prod *= grid[row + i][col - i];
+      }
+    }
+    return prod;
+  }
+
   let prod = 0;
   for (let i = 0; i < grid.length; i++) {
     for (let j = 0; j < grid[0].length; j++) {

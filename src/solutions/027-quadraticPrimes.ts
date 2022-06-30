@@ -4,13 +4,19 @@
   maximum number of primes for consecutive values of n, starting with n = 0.
 */
 
-import { isPrime } from '../helpers';
-
 /*
   Compute the product of coefficients a and b that produce the maximum number of primes for consecutive
   values of n, where the absolute value of a is < 1000 and the absolute value of b is <= 1000.
 */
 export const quadraticPrimes = () => {
+  const isPrime = (num: number): boolean => {
+    if (num < 2 || (num % 2 === 0 && num !== 2)) { return false; }
+    for (let i = 3; i <= (num / 2); i += 2) {
+      if (num % i === 0) { return false; }
+    }
+    return true;
+  };
+
   let a = 0;
   let b = 0;
   let max = 0;

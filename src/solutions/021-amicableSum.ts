@@ -3,8 +3,6 @@
   Evaluate the sum of all the amicable numbers under 10,000.
 */
 
-import { divisorSum } from '../helpers';
-
 /*
   Compute the amicable numbers under a given number (num).
   - When an amicable number is found, add it and its amicable pair to arrat 'nums'
@@ -12,6 +10,14 @@ import { divisorSum } from '../helpers';
     no other pairs between the two.
 */
 const amicableNumbers = (num: number): Array<number> => {
+  const divisorSum = (num: number): number => {
+    let sum = 1;
+    for (let i = 2; i <= (num / 2); i++) {
+      if (num % i === 0) { sum += i; }
+    }
+    return sum;
+  };
+
   let nums: number[] = [];
   for (let i = 2; i <= num; i++) {
     const sum = divisorSum(i);

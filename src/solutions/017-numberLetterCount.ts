@@ -4,12 +4,13 @@
   how many letters would be used?
 */
 
-import { NumberObj } from '../interfaces';
-
 /*
   Compute the number of letters for all numbers between 1 and a given number (num) up to 9999.
 */
 export const numberLetterCount = (num: number) => {
+  interface NumberObj {
+    [key: number]: number;
+  };
   // Single digit number letter count ('one' is 3, 'two' is etc.)
   const singleDig: NumberObj = {
     1: 3,

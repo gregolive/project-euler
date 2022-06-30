@@ -13,6 +13,9 @@ import { NumberObj } from '../interfaces';
     then the month starts on Sunday.
 */
 export const countingSundays = (): number => {
+  interface NumberObj {
+    [key: number]: number;
+  };  
   const month: NumberObj = {
     1: 31,
     2: 28,
