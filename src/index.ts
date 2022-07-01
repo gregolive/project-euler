@@ -1,4 +1,4 @@
 // Project Euler solution functions
 import * as PE from './solutions';
 
-console.log(PE.pandigitalProducts());
+console.log(PE.digitFactorials());
