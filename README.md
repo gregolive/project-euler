@@ -35,3 +35,4 @@ Typescript solutions to various [Project Euler](https://projecteuler.net/about) 
 029. 9,183
 030. 443,839
 031. 73,682
+032. 45,228
