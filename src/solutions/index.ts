@@ -32,3 +32,4 @@ export * from './031-coinCombinations';
 export * from './032-pandigitalProducts';
 export * from './034-digitFactorials';
 export * from './035-circularPrimes';
+export * from './037-trunctablePrimes';
