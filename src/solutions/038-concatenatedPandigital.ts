@@ -6,15 +6,12 @@
 
 /*
   Compute the largest 1 to 9 pandigital 9-digit number formed as the concatenated product of an integer with n.
-  - Assume that the largest pandigital product will be made with integer (i) beginning with 9. (See lines 30-32)
+  - Assume that the largest pandigital product will be made with integer (i) beginning with 9. (See lines 27-29)
   - A valid starting point is therefore 9999 since a 5-digit number starting with 9 cannot be multiplied by 2
     and concatenated, without the concatenated product exceeding 9 digits.
 */
 export const concatenatedPandigital = (): number => {
-  const isPandigital = (numStr: string): boolean => {
-    if (numStr.length === 9 && !numStr.includes('0') && (new Set(numStr)).size === numStr.length) return true;
-    return false;
-  };
+  const isPandigital = (numStr: string): boolean => (numStr.length === 9 && !numStr.includes('0') && (new Set(numStr)).size === numStr.length);
 
   let i = 9999;
   let pan = 0;
