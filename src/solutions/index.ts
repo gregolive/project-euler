@@ -30,6 +30,7 @@ export * from './029-distinctPowers';
 export * from './030-digitFifthPowers';
 export * from './031-coinCombinations';
 export * from './032-pandigitalProducts';
+export * from './033-curiousFractions';
 export * from './034-digitFactorials';
 export * from './035-circularPrimes';
 export * from './037-trunctablePrimes';
