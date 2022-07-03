@@ -7,7 +7,7 @@
   Compute the sum of all numbers equal to the sum of their digit factorial.
   - Assume all will be 2 to 5 digits.
 */
-export const digitFactorials = () => {
+export const digitFactorials = (): number => {
   const factorial = (num: number): number => {
     let fact = 1;
     for (let i = num; i > 1; i--) fact *= i;

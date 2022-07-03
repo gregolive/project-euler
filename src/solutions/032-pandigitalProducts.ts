@@ -7,7 +7,7 @@
 /*
   Compute the sum of all the pandigital products for 1 to 9.
 */
-export const pandigitalProducts = () => {
+export const pandigitalProducts = (): number => {
   const pandigital = (num: number): number | null => {
     for (let i = 2; i < (num / 4); i++) {
       if (num % i === 0 && num / i !== i) {
