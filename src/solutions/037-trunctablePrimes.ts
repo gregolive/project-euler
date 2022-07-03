@@ -3,6 +3,9 @@
   Find the sum of the only eleven primes that are both truncatable from left to right and right to left.
 */
 
+/*
+  Compute the sum of the eleven truncatable primes.
+*/
 export const trunctablePrimes = (): number => {
   const isPrime = (num: number): boolean => {
     if (num < 2 || (num % 2 === 0 && num !== 2)) return false;
