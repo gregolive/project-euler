@@ -9,8 +9,8 @@
   Computes the 4 non-trivial, double-digit, curious fractions and returns the product
   of their lowerst common denominators.
 */
-export const curiousFractions = () => {
-  const isCurious = (n: number, d: number) => {
+export const curiousFractions = (): number => {
+  const isCurious = (n: number, d: number): boolean => {
     const nArr = n.toString().split('').map(Number);
     const dArr = d.toString().split('').map(Number);
     if (nArr[1] === dArr[0] && n / d === nArr[0] / dArr[1]) return true;

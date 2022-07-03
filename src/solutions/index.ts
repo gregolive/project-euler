@@ -34,4 +34,5 @@ export * from './033-curiousFractions';
 export * from './034-digitFactorials';
 export * from './035-circularPrimes';
 export * from './037-trunctablePrimes';
+export * from './038-concatenatedPandigital';
 export * from './040-irrationalDecimalProduct';
