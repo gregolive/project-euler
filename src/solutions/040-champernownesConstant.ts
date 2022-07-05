@@ -8,7 +8,7 @@
   Compute the value of d1 × d10 × d100 × d1000 × d10000 × d100000 × d1000000
   where d is a decimal created by concatenating the positive integers.
 */
-export const irrationalDecimalProduct = (): number => {
+export const champernownesConstant = (): number => {
   let d = '';
   let i = 1;
   while (d.length < 1000000) {

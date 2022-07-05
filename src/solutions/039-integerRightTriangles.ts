@@ -8,7 +8,7 @@
   Compute the perimeter up to number (num) that can generate the maximum number of
   right angle triangles.
 */
-export const rightAnglePerimeter = (num: number): number => {
+export const integerRightTriangles = (num: number): number => {
   const isRightAngle = (a: number, b: number, c: number): boolean => (a ** 2 + b ** 2 === c ** 2);
 
   let maxP = 4; // a = 1, b = 1, c = 2 is the first solution

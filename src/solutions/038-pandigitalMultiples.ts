@@ -10,7 +10,7 @@
   - A valid starting point is therefore 9999 since a 5-digit number starting with 9 cannot be multiplied by 2
     and concatenated, without the concatenated product exceeding 9 digits.
 */
-export const concatenatedPandigital = (): number => {
+export const pandigitalMultiples = (): number => {
   const isPandigital = (numStr: string): boolean => (numStr.length === 9 && !numStr.includes('0') && (new Set(numStr)).size === numStr.length);
 
   let i = 9999;
