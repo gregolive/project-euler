@@ -39,3 +39,4 @@ export * from './038-pandigitalMultiples';
 export * from './039-integerRightTriangles';
 export * from './040-champernownesConstant';
 export * from './041-pandigitalPrime';
+export * from './042-codedTriangleNumbers';

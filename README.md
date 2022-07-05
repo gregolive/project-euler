@@ -45,3 +45,4 @@ Typescript solutions to various [Project Euler](https://projecteuler.net/about) 
 039. 840
 040. 210
 041. 7,652,413
+042. 162
