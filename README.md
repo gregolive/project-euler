@@ -1,6 +1,6 @@
 # Project Euler Solutions
 
-Typescript solutions to various [Project Euler](https://projecteuler.net/about) challenges.
+Typescript (found inside 'src' directory) and Java solutions to various [Project Euler](https://projecteuler.net/about) challenges.
 
 ## Computed Solutions
 

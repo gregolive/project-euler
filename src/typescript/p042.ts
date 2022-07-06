@@ -16,7 +16,7 @@ export const codedTriangleNumbers = (): number => {
   };
 
   let triangles = 0;
-  const data = fs.readFileSync(require('path').resolve(__dirname, '../files/p042_words.txt'));
+  const data = fs.readFileSync(require('path').resolve(__dirname, '../../files/p042_words.txt'));
   const words = data.toString().replaceAll('"', '').split(',').sort();
   for (let i = 0; i < words.length; i++) {
     const score = getScore(words[i]);

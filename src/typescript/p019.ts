@@ -4,8 +4,6 @@
   (1 Jan 1901 to 31 Dec 2000)?
 */
 
-import { NumberObj } from '../interfaces';
-
 /*
   Compute the number of Sundays on the first of the month from 1901-2001.
   - Keep track of the number of days up to the current month (elapsed) and
