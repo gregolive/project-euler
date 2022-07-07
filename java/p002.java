@@ -8,14 +8,14 @@ public final class p002 {
   }
 
   public Integer solve() {
-    int one = 1;
-    int two = 2;
+    int a = 1;
+    int b = 2;
     int sum = 2;
-    while (one <= 4000000) {
-      int temp = two;
-      two += one;
-      one = temp;
-      if (two % 2 == 0) sum += two;
+    while (a <= 4000000) {
+      int temp = b;
+      b += a;
+      a = temp;
+      if (b % 2 == 0) sum += b;
     }
     return sum;
   }
