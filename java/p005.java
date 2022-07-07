@@ -7,7 +7,7 @@ public final class p005 {
     System.out.println(new p005().solve());
   }
 
-  public Integer solve() {
+  public int solve() {
     final long LIMIT = factorial(20);
     for (int i = 20; i < LIMIT; i += 20) {
       for (int j = 2; j <= 20; j++) {

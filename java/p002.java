@@ -7,7 +7,7 @@ public final class p002 {
     System.out.println(new p002().solve());
   }
 
-  public Integer solve() {
+  public int solve() {
     int a = 1;
     int b = 2;
     int sum = 2;

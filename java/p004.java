@@ -7,7 +7,7 @@ public final class p004 {
     System.out.println(new p004().solve());
   }
 
-  public Integer solve() {
+  public int solve() {
     int product = 0;
     for (int i = 999; i > 99; i--) {
       for (int j = 999; j > 99; j--) {
@@ -17,7 +17,7 @@ public final class p004 {
     return product;
   }
 
-  private static Boolean isPalindrome(int n) {
+  private static boolean isPalindrome(int n) {
     String s = String.valueOf(n);
     for (int i = 0; i < (s.length() / 2); i++) {
       if (s.charAt(i) != s.charAt(s.length() - i - 1)) return false;
