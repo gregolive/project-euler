@@ -47,3 +47,4 @@ Typescript (found inside 'src' directory) and Java solutions to various [Project
 041. 7,652,413
 042. 162
 043. 16,695,334,890
+044. 5,482,660
