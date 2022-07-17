@@ -1,4 +1,4 @@
 // Project Euler solution functions
 import * as PE from './typescript';
 
-console.log(PE.codedTriangleNumbers());
+console.log(PE.substringDivisibilty());
