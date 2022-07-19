@@ -17,7 +17,7 @@ export const distinctPrimeFactors = (): number => {
 
   const getPrimes = (max: number, memo: number[] = []): number[] => {
     const start = (memo.length > 0) ? memo[memo.length - 1] : 1;
-    for (let i = start +  1; i <= max; i++) {
+    for (let i = start + 1; i <= max; i++) {
       if (isPrime(i)) memo.push(i);
     }
     return memo;

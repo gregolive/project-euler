@@ -6,7 +6,7 @@
 /*
   Computes the largest pandigital prime.
 */
-export const pandigitalPrime = () => {
+export const pandigitalPrime = (): number => {
   const isPandigital = (num: number): boolean => {
     const str = num.toString();
     const set = [ ...new Set(str) ].map(Number);

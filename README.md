@@ -50,3 +50,6 @@ Typescript (found inside 'src' directory) and Java solutions to various [Project
 044. 5,482,660
 045. 1,533,776,805
 046. 5,777
+047. 134,043
+048. 9,110,846,700
+049. 296,962,999,629
