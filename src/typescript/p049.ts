@@ -3,6 +3,10 @@
   What 12-digit number do you form by concatenating the three terms in this arithmetic sequence?
 */
 
+/*
+  Compute the 12-digit number that can be formed by concatenating the second set of 3 4-digit\
+  terms that are prime and are permutations of each other.
+*/
 export const primePermutations = (): number => {
   const isPrime = (n: number): boolean => {
     if (n < 2) return false;
